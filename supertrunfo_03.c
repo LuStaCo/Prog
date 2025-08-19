@@ -4,7 +4,7 @@
 	char est1[50];
 	char cid1[50];
 	char cod1[10]="A01";
-	int pop1;
+	unsigned int pop1;
 	float km1;
 	float pib1;
 	int tur1;
@@ -14,7 +14,7 @@
 	char est2[50];
 	char cid2[50];
 	char cod2[10]="B01";
-	int pop2;
+	unsigned int pop2;
 	float km2;
 	float pib2;
 	int tur2;
