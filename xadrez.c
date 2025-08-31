@@ -30,7 +30,7 @@ int main() {
 printf("#### Movimentação da torre ####\n");
     movetorre(pçtorre);
     
-printf("\n#### Movimentação do bispo ####\n");
+printf("\n#### Movimentação do bispo ####");
     movebispo(pçbispo);
 
 printf("\n#### Movimentação da rainha ####\n");
