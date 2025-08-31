@@ -6,7 +6,6 @@ void movetorre(int casa01){
         printf("%d casas à direita.\n", casa01);
     }
 }
-
 //Recursividade Bispo
 void movebispo(int casa02){
     for(int i=0; i<6; i++){
@@ -16,9 +15,6 @@ void movebispo(int casa02){
         printf("\n");
     }
 }
-
-
-
 //Recursividade Rainha
 void moverainha(int casa03){
     if(casa03>0){
@@ -26,8 +22,8 @@ void moverainha(int casa03){
         printf("%d casas à esquerda.\n", casa03);
     }
 }
-
 int main() {
+//Movimento total de cada peça    
     int pçtorre=5;
     int pçbispo=5;
     int pçrainha=8;
@@ -35,7 +31,7 @@ printf("#### Movimentação da torre ####\n");
     movetorre(pçtorre);
     
 printf("\n#### Movimentação do bispo ####\n");
-movebispo(pçbispo);
+    movebispo(pçbispo);
 
 printf("\n#### Movimentação da rainha ####\n");
     moverainha(pçrainha);
