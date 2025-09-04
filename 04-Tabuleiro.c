@@ -23,9 +23,8 @@ printf("Área de ataque em formato de cone: \n");
     }
     // A largura diminui com o aumento da linha (i)
     for (int i = 0; i < linha01; i++) {
-        // Calcula o número de elementos para a linha atual
         int n1 = coluna01 - (2 * i);
-        if (n1 < 1) { // Garanta pelo menos um elemento para a dica
+        if (n1 < 1) { 
             n1 = 1;
         }
 
@@ -63,7 +62,6 @@ int matriz_cruz[linha02][linha02];
     //Matriz preenchida para representar a cruz
     for (int i = 0; i < linha02; i++) {
         for (int j = 0; j < linha02; j++) {
-            // A matriz representa a cruz preenchendo a linha central e a coluna central
             if (i == indice_centro02 || j == indice_centro02) {
                 matriz_cruz[i][j] = 1;
             }
@@ -94,9 +92,7 @@ int matriz_octaedro[linha03][linha03];
     // Matriz preenchida para formar o octaedro
     for (int i = 0; i < linha03; i++) {
         for (int j = 0; j < linha03; j++) {
-            // Check if the point (i, j) is within the rhombus boundaries
-            // The condition is: |i - center| + |j - center| <= max_distance_from_center
-            if (abs(i - indice_centro03) + abs(j - indice_centro03) <= indice_centro03) {
+                if (abs(i - indice_centro03) + abs(j - indice_centro03) <= indice_centro03) {// Verifica se os índice (i,j) estão dentro do losango
                 matriz_octaedro[i][j] = 1;
             }
         }
